@@ -1,0 +1,88 @@
+{
+  "name": "text-digest",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "author": "0error <twitter: @0error_eth>",
+  "type": "module",
+  "dependencies": {
+    "@microsoft/fetch-event-source": "^2.0.1",
+    "@pinecone-database/pinecone": "^0.0.12",
+    "@radix-ui/react-accordion": "^1.1.1",
+    "@types/express-session": "^1.17.7",
+    "accordion": "^3.0.2",
+    "body-parser": "^1.20.2",
+    "clsx": "^1.2.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "formidable": "^2.1.1",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.1.1",
+    "js-tiktoken": "^1.0.6",
+    "langchain": "^0.0.55",
+    "lucide-react": "^0.125.0",
+    "multer": "^1.4.5-lts.1",
+    "next": "13.2.3",
+    "path": "^0.12.7",
+    "pdf-parse": "1.1.1",
+    "pinecone-client": "^1.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-markdown": "^8.0.5",
+    "tailwind-merge": "^1.10.0",
+    "util": "^0.12.5",
+    "uuid": "^9.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint --ignore-path .gitignore \"**/*.+(ts|js|tsx)\"",
+    "server": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "next",
+      "next/core-web-vitals"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.5.1",
+    "@types/formidable": "^2.0.6",
+    "@types/fs-extra": "^11.0.1",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^18.14.6",
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
+    "@types/uuid": "^9.0.1",
+    "@typescript-eslint/parser": "^5.54.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.3",
+    "postcss": "^8.4.24",
+    "prettier": "^2.8.4",
+    "tailwindcss": "^3.3.2",
+    "ts-node": "^10.9.1",
+    "tsx": "^3.12.3",
+    "typescript": "^4.9.5",
+    "webpack-cli": "^5.1.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

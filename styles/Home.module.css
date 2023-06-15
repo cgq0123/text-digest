@@ -1,0 +1,297 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.main h1 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.main h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.header {
+  width: auto;
+}
+
+.cloudform {
+  position: relative;
+}
+
+.index_body {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.index_body .left {
+  width: 29%;
+  border: 1px solid #999;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.index_body .left textarea {
+  max-width: 100%;
+  width: 98%;
+  height: calc(50vh - 243px);
+}
+
+.index_body .right {
+  width: 69%;
+  border: 1px solid #999;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.index_body .right p {
+  display: block;
+  width: 100%;
+}
+
+.index_body .right .arrow_region {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.index_body .right .arrow_region textarea {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.index_body .right h2 {
+  margin: 0;
+}
+
+.index_body .right .list {
+  display: flex;
+}
+
+.index_body .right .list .li {
+  margin-right: 10px;
+}
+
+.messagelist h3 {
+  font-size: 12px;
+  margin: 0;
+}
+
+.messagelist button {
+  height: 50px;
+}
+
+.textarea {
+  position: relative;
+  resize: none;
+  font-size: 1.1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  width: 45vw;
+  border-radius: 0.5rem;
+  border: 1px solid #d9d9e3;
+  background: #ffffff;
+  color: #000;
+  outline: none;
+}
+
+.textarea:disabled {
+  opacity: 0.5;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #6b7280;
+  box-shadow: 0 0 0 3px rgba(156, 163, 175, 0.5);
+}
+
+.textarea::placeholder {
+  color: #6b7280;
+}
+
+.generatebutton {
+  position: absolute;
+  top: 0.87rem;
+  right: 1rem;
+  color: rgb(165, 162, 162);
+  background: none;
+  padding: 0.3rem;
+  border: none;
+  display: flex;
+}
+
+.loadingwheel {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.25rem;
+}
+
+.generatebutton:hover {
+  background: #e4575726;
+  border-radius: 0.2rem;
+}
+
+.generatebutton:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+  background: none;
+}
+
+.messagelist {
+  width: 100%;
+  /* min-height: 100%; */
+  overflow-y: auto;
+  height: calc(100vh - 406px);
+  border-radius: 0.5rem;
+  margin: 20px 0;
+}
+
+.messagelistloading {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.usermessage {
+  background: #ffffff;
+  padding: 1.5rem;
+  color: #000;
+}
+
+.usermessagewaiting {
+  padding: 1.5rem;
+  color: #000;
+  background: linear-gradient(to left, #07080938, #1a1c2024, #07080936);
+  background-size: 200% 200%;
+  background-position: -100% 0;
+  animation: loading-gradient 2s ease-in-out infinite;
+  animation-direction: alternate;
+  animation-name: loading-gradient;
+}
+
+@keyframes loading-gradient {
+  0% {
+    background-position: -100% 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.apimessage,
+.usermessage,
+.usermessagewaiting {
+  display: flex;
+}
+
+.markdownanswer {
+  line-height: 1.75;
+}
+
+.markdownanswer a:hover {
+  opacity: 0.8;
+}
+
+.markdownanswer a {
+  color: #b13a3a;
+  font-weight: 500;
+}
+
+.markdownanswer code {
+  color: #15cb19;
+  font-weight: 500;
+  white-space: pre-wrap !important;
+}
+
+.markdownanswer ol,
+.markdownanswer ul {
+  margin: 1rem;
+}
+
+.markdownanswer h1,
+.markdownanswer h2,
+.markdownanswer h3 {
+  font-size: inherit;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem 0;
+  flex-direction: column;
+}
+
+.cloud {
+  width: 75vw;
+  height: 65vh;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  border: 1px solid #d9d9e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointsnormal {
+  width: 90%;
+  height: 90%;
+}
+
+.pointsdim {
+  width: 90%;
+  height: 90%;
+  opacity: 0.25;
+}
+
+.footer {
+  color: #5f6368;
+  font-size: 0.8rem;
+  margin: 1.5rem;
+}
+
+.footer a {
+  font-weight: 500;
+  color: #7a7d81;
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  .main {
+    padding: 1rem;
+    max-height: 90vh;
+  }
+
+  .cloud {
+    width: 22rem;
+    height: 28rem;
+  }
+
+  .textarea {
+    width: 22rem;
+  }
+
+  .markdownanswer code {
+    white-space: pre-wrap !important;
+  }
+
+  .footer {
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: center;
+  }
+}
